@@ -1,0 +1,15 @@
+possible color pallet
+
+Ebony Clay
+#282C44
+
+Pewter
+#A1A5A1
+
+Pharlap
+#A07E6E
+
+Lynch
+#75889E
+
+python3 -m http.server

@@ -1,6 +1,14 @@
+/*~~~~~~~~~~~~~~~~colours~~~~~~~~~~~~~~~~~~~*/
 .navbar {
+    background-color:#282C44;
+}
+.jumbotron-title {
+    background-color: rgba(160, 126, 110, 0.8);
+}
+.jumbotron-title h1 {
     color:#282C44;
 }
+/*~~~~~~~~~~~~~~~~carousel/jumbotron~~~~~~~~~~~~~~~~~~~*/
 .carousel-item {
     height: 600px;
     background-size: cover;
@@ -23,10 +31,9 @@
     position:absolute;
     top:200px;
     text-align: center;
-    background-color: rgba(160, 126, 110, 0.8);
     padding:0;
-    margin:auto 10%;
-    width:80%;
+    margin:auto 25%;
+    width:50%;
     border-radius: 10px;
     overflow:hidden;
 }
@@ -36,7 +43,22 @@
     vertical-align: middle;
     height:200px;
     font-size: calc(1.5rem + 4vw);
-    color:#282C44;
+}
+@media only screen and (max-width: 1000px) {
+    .carousel-item {
+        height: 600px;
+    }
+    .jumbotron-title {
+        margin:0 22%;
+        width:50%;
+        height:150px;
+        top:225px;
+    }
+    .jumbotron-title h1 {
+        line-height:150px;
+        height:150px;
+        font-size: calc(1.5rem + 4vw);
+    }
 }
 @media only screen and (max-width: 600px) {
     .carousel-item {
@@ -68,5 +90,48 @@
         line-height:80px;
         height:80px;
         font-size: x-large;
+    }
+}
+/*~~~~~~~~~~~~~~~~info~~~~~~~~~~~~~~~~~~~*/
+.info-img:nth-of-type(1) {
+    background-image: url(/assets/images/astronomy.jpg);
+}
+.info-img:nth-of-type(2) {
+    background-image: url(/assets/images/stocks.jpeg);
+}
+.info-img {
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    height:150px;
+    margin: 0;
+}
+.info-col, .info-row {
+    padding-right:0;
+    padding-left: 0;
+}
+.nav-button {
+    margin: auto;
+}
+#info h2 {
+    text-align: center;
+}
+#info h3 {
+    margin-bottom: 20px;
+}
+#info p {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.info-main{
+    padding:5%;
+    margin: 5%;
+    width:80%;
+}
+@media only screen and (max-width: 360px) {
+    .info-main{
+        padding:1%;
+        margin: auto;
+        width:80%;
     }
 }
