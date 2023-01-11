@@ -1,0 +1,72 @@
+.navbar {
+    color:#282C44;
+}
+.carousel-item {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-item-one {
+    background-image: url("/assets/images/ground reciever.jpg");
+}
+.carousel-item-two {
+    background-image: url("/assets/images/satellite1.jpg");
+}
+.carousel-item-three {
+    background-image: url("/assets/images/satellite2.png");
+}
+.carousel-inner {
+    position: relative;
+}
+.jumbotron-title {
+    float:left;
+    position:absolute;
+    top:200px;
+    text-align: center;
+    background-color: rgba(160, 126, 110, 0.8);
+    padding:0;
+    margin:auto 10%;
+    width:80%;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.jumbotron-title h1 {
+    line-height:200px;
+    margin:0;
+    vertical-align: middle;
+    height:200px;
+    font-size: calc(1.5rem + 4vw);
+    color:#282C44;
+}
+@media only screen and (max-width: 600px) {
+    .carousel-item {
+        height: 450px;
+    }
+    .jumbotron-title {
+        margin:0 15%;
+        width:70%;
+        height:100px;
+        top:175px;
+    }
+    .jumbotron-title h1 {
+        line-height:100px;
+        height:100px;
+        font-size: calc(1.5rem + 4vw);
+    }
+}
+@media only screen and (max-width: 360px) {
+    .carousel-item {
+        height: 300px;
+    }
+    .jumbotron-title {
+        margin:0 20%;
+        width:60%;
+        height:80px;
+        top:110px;
+    }
+    .jumbotron-title h1 {
+        line-height:80px;
+        height:80px;
+        font-size: x-large;
+    }
+}
